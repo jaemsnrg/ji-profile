@@ -3,9 +3,7 @@ import {AppWithStylesAndRoutes} from './styles/styleWrapper';
 
 function App() {
   return (
-    <div className="App">
       <AppWithStylesAndRoutes />
-    </div>
   );
 }
 
