@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react';
 import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import Home from '@pages/Home';
+import PortalRouter from '../router/index';
 import mediaQueries from './mediaQueries';
 import fontFamilies from './fonts';
 import text from './text';
 import colours from './colours';
+
 
 const styles = {
     mq: mediaQueries,
@@ -27,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
         <ThemeProvider theme={styles}>
           <Fragment>
             <GlobalStyle />
-            <Home />
+            <PortalRouter />
           </Fragment>
         </ThemeProvider>
     );

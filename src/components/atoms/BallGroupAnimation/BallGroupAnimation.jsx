@@ -23,19 +23,33 @@ const item = {
   }
 };
 
-const BallGroupAnimation = () => (
-    <Wrapper>
-        <motion.ul
-            className="container"
-            variants={container}
-            initial="hidden"
-            animate="visible"
-        >
-            {[0, 1, 2, 3].map(index => (
-            <motion.li key={index} className="item" variants={item} />
-            ))}
-        </motion.ul>
-  </Wrapper>
-);
+const pushItemsIntoArray = (numOfItems) => {
+  const itemArray = [];
+  for (let item = 0; item < numOfItems; item++ )  {
+    itemArray.push(item)
+  }
+  return itemArray;
+}
+
+const BallGroupAnimation = (props) => {
+  let {numOfItems, width} = props;
+  console.log('numOfItems', props)
+  let itemsToAnimate = pushItemsIntoArray(numOfItems)
+  console.log('itemsToAnimate', itemsToAnimate)
+  return (
+    <Wrapper width={width} >
+          <motion.ul
+              className="container"
+              variants={container}
+              initial="hidden"
+              animate="visible"
+          >
+              {itemsToAnimate.map(index => (
+              <motion.li key={index} className="item" variants={item} />
+              ))}
+          </motion.ul>
+    </Wrapper>
+  );
+}
 
 export default BallGroupAnimation;

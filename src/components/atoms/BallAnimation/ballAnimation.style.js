@@ -1,0 +1,8 @@
+import styled from "styled-components";
+
+export const Wrapper = styled.div`
+    width: ${({width}) => width};
+    height: ${({width}) => width};
+    border-radius: 50%;
+    background-color: black;
+`

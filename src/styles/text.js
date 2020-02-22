@@ -2,17 +2,18 @@ import { css } from 'styled-components';
 import mediaQueries from './mediaQueries';
 import { fontFamilyNames } from './fonts';
 
-const { Manrope } = fontFamilyNames;
+const { Manrope, EbGaramond } = fontFamilyNames;
 
 
 const t1Base = {
-  fontSize: '2.8rem',
+  fontSize: '4rem',
+ 
   mq: {
     atTablet: {
-      fontSize: '4rem',
+      fontSize: '5rem',
     },
     atDesktop: {
-      fontSize: '4rem',
+      fontSize: '5rem',
     },
   },
 };
@@ -29,14 +30,38 @@ const t2Base = {
   },
 };
 
+const blBase = {
+  fontSize: '1.2rem',
+  mq: {
+    atTablet: {
+      fontSize: '1.75rem',
+    },
+    atDesktop: {
+      fontSize: '1.75rem',
+    },
+  },
+};
+
 const bmBase = {
   fontSize: '1rem',
   mq: {
     atTablet: {
-      fontSize: '1.5rem',
+      fontSize: '1.25rem',
     },
     atDesktop: {
-      fontSize: '1.5rem',
+      fontSize: '1.25rem',
+    },
+  },
+};
+
+const bsmBase = {
+  fontSize: '1rem',
+  mq: {
+    atTablet: {
+      fontSize: '1rem',
+    },
+    atDesktop: {
+      fontSize: '1rem',
     },
   },
 };
@@ -57,7 +82,7 @@ const standardTextStyles = {
 
   t1: {
     ...t1Base,
-    fontFamily: Manrope,
+    fontFamily: EbGaramond,
   },
 
   t2: {
@@ -65,8 +90,18 @@ const standardTextStyles = {
     fontFamily: Manrope,
   },
 
+  bl: {
+    ...blBase,
+    fontFamily: Manrope,
+  },
+
   bm: {
     ...bmBase,
+    fontFamily: Manrope,
+  },
+
+  bsm: {
+    ...bsmBase,
     fontFamily: Manrope,
   },
 

@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
   .st1 {
     fill:none;
     stroke:#494949;
-    stroke-width:2;
+    stroke-width:3;
     stroke-miterlimit:10
   }
 `
