@@ -1,5 +1,5 @@
-import Moon from './Moon'
+import Hand from './Hand'
 
 export {
-    Moon
+    Hand
 }
