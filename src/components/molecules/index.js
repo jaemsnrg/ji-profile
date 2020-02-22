@@ -1,7 +1,5 @@
-import Header from './Header'
-import Footer from './Footer'
+import HandAnimation from './HandAnimation'
 
 export {
-    Header,
-    Footer,
+    HandAnimation,
 }
