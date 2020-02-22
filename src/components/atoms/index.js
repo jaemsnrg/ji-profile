@@ -1,21 +1,14 @@
-import Logo from './Logo';
-import MenuIcon from './MenuIcon';
-import TitleText from './TitleText';
-import Ballie from './Ballie';
-import SubTitleText from './SubTitleText';
-import AnimatedBall from './AnimatedBall';
-import FeatureBall from './FeatureBall';
-import AltLogo from './AltLogo';
-import DetailText from './DetailText';
+
+import BallGroupAnimation from './BallGroupAnimation';
+import Title from './Title';
+import InfoBox from './InfoBox';
+import TextBlock from './TextBlock';
+import BallAnimation from './BallAnimation';
 
 export {
-    Logo,
-    MenuIcon,
-    TitleText,
-    Ballie,
-    SubTitleText,
-    AnimatedBall,
-    FeatureBall,
-    AltLogo,
-    DetailText,
+    BallGroupAnimation,
+    Title,
+    InfoBox,
+    TextBlock,
+    BallAnimation,
 }

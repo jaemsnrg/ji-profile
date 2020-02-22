@@ -2,89 +2,72 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     position: relative;
-    height: calc(100vh - 84px);
+    
     width: 100%;
+    padding: 20px;
+    ${({theme}) => theme.mq.atTablet`
+        height: 100vh;
+    `}}
 `
 
-export const MoonWrapper = styled.div`
-    position: absolute;
-    top: 55%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    z-index: 0;
-    // ${({theme}) => theme.mq.atTablet`
-    //     left: 40%;
-    // `}}
-`
-
-export const TitleBox = styled.div`
-    position: absolute;
-    top: 35%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    width: 120px;
-    z-index: 10;
-`
-
-export const BallWrapper = styled.div`
-    position: relative;
+export const LargeLayout = styled.div`
+    
+    display: flex;
     height: 100%;
-
+    align-items: center;
+    
     & > div:nth-child(1) {
-        position: absolute;
-        left: 65%;
-        top: 0%;
-        z-index: 20;
-        // ${({theme}) => theme.mq.atTablet`
-        //     left: 75%;
-        // `}}
+        width: calc(100% - 40px);
+        float: left;
+        ${({theme}) => theme.mq.atTablet`TitleWrapper
+            width: 50%;
+        `}}
     }
     & > div:nth-child(2) {
-        position: absolute;
-        left: 25%;
-        top: 3%;
-        z-index: -10;
-        transform: scale(.5);
-    //     ${({theme}) => theme.mq.atTablet`
-    //     left: 35%;
-    // `}}
+        float: right;
+        ${({theme}) => theme.mq.atTablet`TitleWrapper
+            display: none;
+        `}}
     }
-    & > div:nth-child(3) {
-        position: absolute;
-        left: 20%;
-        top: 50%;
-        z-index: 20;
-    //     ${({theme}) => theme.mq.atTablet`
-    //     left: 30%;
-    // `}}
-    }
-    & > div:nth-child(4) {
-        position: absolute;
-        left: 80%;
-        top: 20%;
-        z-index: -10;
-        transform: scale(.5);
-    //     ${({theme}) => theme.mq.atTablet`
-    //     left: 90%;
-    // `}}
-    }
-    & > div:nth-child(5) {
-        position: absolute;
-        left: 65%;
-        top: 40%;
-        z-index: -10;
-        transform: scale(.5);
-    //     ${({theme}) => theme.mq.atTablet`
-    //     left: 75%;
-    // `}}
-    }
-    & > div:nth-child(6) {
-        position: absolute;
-        left: 50%;
-        top: 69%;
-        z-index: 20;
-    //     ${({theme}) => theme.mq.atTablet`
-    //     left: 60%;
-    // `}}
-    }
+
+
+`
+
+export const TitleWrapper = styled.div`
+    margin-bottom: 40px;
+    margin-top: 20px;
+    ${({theme}) => theme.mq.atTablet`
+    margin-bottom: 60px;
+    `}}
+`
+
+export const InfoBoxWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    // & > div {
+    //     margin-right: 40px;
+    // }
+    ${({theme}) => theme.mq.atTablet`
+
+    `}}
+`
+
+export const TextBlockWrapper = styled.div`
+    // margin: 60px 0 60px 0;
+    width: 100%;
+    ${({theme}) => theme.mq.atTablet`
+        margin: 60px 0 60px 0;
+    `}}
+`
+
+export const MobileHandWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ${({theme}) => theme.mq.atTablet`
+        display: none;
+    `}}
 `
