@@ -29,7 +29,7 @@ const GlobalStyle = createGlobalStyle`
         <ThemeProvider theme={styles}>
           <Fragment>
             <GlobalStyle />
-            <PortalRouter />
+            <Home />
           </Fragment>
         </ThemeProvider>
     );

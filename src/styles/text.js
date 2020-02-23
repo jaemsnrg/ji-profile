@@ -55,13 +55,13 @@ const bmBase = {
 };
 
 const bsmBase = {
-  fontSize: '1rem',
+  fontSize: '0.75rem',
   mq: {
     atTablet: {
-      fontSize: '1rem',
+      fontSize: '0.9rem',
     },
     atDesktop: {
-      fontSize: '1rem',
+      fontSize: '0.9rem',
     },
   },
 };
