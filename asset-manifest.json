@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/ji-profile/static/js/main.f85ccd8c.chunk.js",
-    "main.js.map": "/ji-profile/static/js/main.f85ccd8c.chunk.js.map",
+    "main.js": "/ji-profile/static/js/main.0c597b17.chunk.js",
+    "main.js.map": "/ji-profile/static/js/main.0c597b17.chunk.js.map",
     "runtime-main.js": "/ji-profile/static/js/runtime-main.5a14a875.js",
     "runtime-main.js.map": "/ji-profile/static/js/runtime-main.5a14a875.js.map",
     "static/js/2.71b695bc.chunk.js": "/ji-profile/static/js/2.71b695bc.chunk.js",
     "static/js/2.71b695bc.chunk.js.map": "/ji-profile/static/js/2.71b695bc.chunk.js.map",
     "index.html": "/ji-profile/index.html",
-    "precache-manifest.2aa6f3b5e4f62f54ddb3017d3de63537.js": "/ji-profile/precache-manifest.2aa6f3b5e4f62f54ddb3017d3de63537.js",
+    "precache-manifest.16736b50500d041c7297001e8afb062e.js": "/ji-profile/precache-manifest.16736b50500d041c7297001e8afb062e.js",
     "service-worker.js": "/ji-profile/service-worker.js",
     "static/js/2.71b695bc.chunk.js.LICENSE.txt": "/ji-profile/static/js/2.71b695bc.chunk.js.LICENSE.txt",
     "static/media/EBGaramondRegularWoff.woff": "/ji-profile/static/media/EBGaramondRegularWoff.df6e0644.woff",
@@ -17,6 +17,6 @@
   "entrypoints": [
     "static/js/runtime-main.5a14a875.js",
     "static/js/2.71b695bc.chunk.js",
-    "static/js/main.f85ccd8c.chunk.js"
+    "static/js/main.0c597b17.chunk.js"
   ]
 }
