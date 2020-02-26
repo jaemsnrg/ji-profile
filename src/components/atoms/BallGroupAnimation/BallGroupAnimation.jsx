@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Wrapper } from './ballGroupAnimation.style'
+import { Wrapper } from "./ballGroupAnimation.style";
 import { motion } from "framer-motion";
 
 const container = {
@@ -23,33 +23,31 @@ const item = {
   }
 };
 
-const pushItemsIntoArray = (numOfItems) => {
+const pushItemsIntoArray = numOfItems => {
   const itemArray = [];
-  for (let item = 0; item < numOfItems; item++ )  {
-    itemArray.push(item)
+  for (let item = 0; item < numOfItems; item++) {
+    itemArray.push(item);
   }
   return itemArray;
-}
+};
 
-const BallGroupAnimation = (props) => {
-  let {numOfItems, width} = props;
-  console.log('numOfItems', props)
-  let itemsToAnimate = pushItemsIntoArray(numOfItems)
-  console.log('itemsToAnimate', itemsToAnimate)
+const BallGroupAnimation = props => {
+  let { numOfItems, width } = props;
+  let itemsToAnimate = pushItemsIntoArray(numOfItems);
   return (
-    <Wrapper width={width} >
-          <motion.ul
-              className="container"
-              variants={container}
-              initial="hidden"
-              animate="visible"
-          >
-              {itemsToAnimate.map(index => (
-              <motion.li key={index} className="item" variants={item} />
-              ))}
-          </motion.ul>
+    <Wrapper width={width}>
+      <motion.ul
+        className="container"
+        variants={container}
+        initial="hidden"
+        animate="visible"
+      >
+        {itemsToAnimate.map(index => (
+          <motion.li key={index} className="item" variants={item} />
+        ))}
+      </motion.ul>
     </Wrapper>
   );
-}
+};
 
 export default BallGroupAnimation;

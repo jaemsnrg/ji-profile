@@ -1,19 +1,17 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: ${({width}) => width};
+  width: ${({ width }) => width};
 
-  ${(props) => props.theme.mq.atTablet`
-    width: 400px;
+  ${props => props.theme.mq.atTablet`
   `}
-  ${(props) => props.theme.mq.atDesktop`
-    width: 400px;
+  ${props => props.theme.mq.atDesktop`
   `}
 
   & > ul {
     margin: 0;
     padding: 0;
-    width: 100%;
+    // width: 100%;
     list-style: none;
     line-height: 0;
   }
@@ -27,5 +25,4 @@ export const Wrapper = styled.div`
     border-radius: 50%;
     list-style: none;
   }
-
-`
+`;

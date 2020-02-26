@@ -1,19 +1,18 @@
-import React, { Fragment } from 'react';
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
-import Home from '@pages/Home';
-import PortalRouter from '../router/index';
-import mediaQueries from './mediaQueries';
-import fontFamilies from './fonts';
-import text from './text';
-import colours from './colours';
-
+import React, { Fragment } from "react";
+import { ThemeProvider, createGlobalStyle } from "styled-components";
+import Home from "@pages/Home";
+import PortalRouter from "../router/index";
+import mediaQueries from "./mediaQueries";
+import fontFamilies from "./fonts";
+import text from "./text";
+import colours from "./colours";
 
 const styles = {
-    mq: mediaQueries,
-    colours,
-    text,
-  };
-  
+  mq: mediaQueries,
+  colours,
+  text
+};
+
 const GlobalStyle = createGlobalStyle`
   body { 
     margin: 0;
@@ -24,13 +23,13 @@ const GlobalStyle = createGlobalStyle`
   ${fontFamilies}
 `;
 
- export const AppWithStylesAndRoutes = ({ history }) => {
-    return (
-        <ThemeProvider theme={styles}>
-          <Fragment>
-            <GlobalStyle />
-            <Home />
-          </Fragment>
-        </ThemeProvider>
-    );
-  };
+export const AppWithStylesAndRoutes = ({ history }) => {
+  return (
+    <ThemeProvider theme={styles}>
+      <Fragment>
+        <GlobalStyle />
+        <Home />
+      </Fragment>
+    </ThemeProvider>
+  );
+};

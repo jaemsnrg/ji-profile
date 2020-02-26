@@ -1,13 +1,10 @@
-import React from 'react'
-import {Wrapper} from './textBlock.style'
+import React from "react";
+import { Wrapper } from "./textBlock.style";
 
-const TextBlock = (props) => {
-    const {text} = props
+const TextBlock = props => {
+  const { text } = props;
 
-    return (
-        <Wrapper dangerouslySetInnerHTML={{__html:text}} />
-    )
-}
-
+  return <Wrapper dangerouslySetInnerHTML={{ __html: text }} />;
+};
 
 export default TextBlock;
